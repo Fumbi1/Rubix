@@ -1,10 +1,10 @@
 "use client"
 import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
-import "./app.css";
+import "./tr.css";
 
 
-const Transition = ({children}) => {
+const Transition2 = ({children}) => {
 
   const ref = useRef(null);
   const view = useInView(ref, {once: true});
@@ -39,7 +39,7 @@ const Transition = ({children}) => {
           variants={transitionVariants}
           initial="initial"
           animate={controllerA}
-          transition={{delay: 0.25,duration: 0.375}}>
+          transition={{delay: 0.25,duration: 0.75}}>
             {children}
           </motion.div>
 
@@ -51,9 +51,10 @@ const Transition = ({children}) => {
           }}
           initial="hidden"
           animate={controllerW}
-          transition={{duration: 0.375, ease: 'easeIn'}}
+          transition={{duration: 0.75, ease: 'easeIn'}}
           />
         </div>
     );
 };
-export default Transition;
+export default Transition2;
+

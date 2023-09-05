@@ -5,11 +5,11 @@
     z-index: 3;
     top: 0;
     left: 0;
-    background-color: #F5F5F5;
+    background: transparent ;
     border-bottom-left-radius: 3.5rem;
     border-bottom-right-radius: 3.5rem;
     border-bottom: none;
-    opacity: 0.95;
+    backdrop-filter: blur(5px);
     filter: brightness(75%);
     box-shadow: 4px 4px 40px 4px rgba(0, 0, 0, 0.6);
 }
@@ -24,7 +24,7 @@ nav{
 }
 
 .home{
-    width: 17.5%;
+    width: 25%;
 }
 
 .pages{
@@ -37,7 +37,7 @@ nav{
 
 .Link{
     text-decoration: none;
-    color: #292F36;
+    color: #573324;
     text-align: center;
     font-family: Jost;
     font-size: clamp(0.6rem, 0.0286rem + 1.3571vw, 1.25rem);

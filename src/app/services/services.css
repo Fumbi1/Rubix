@@ -1,43 +1,7 @@
 .service_main{
     margin-top: 6rem;
-    position: relative;
-    background-image: url(/service.png);
-    background-size: cover;
+
     width: 100vw;
-    height: 30vh;
-}
-
-.service_tag{
-    background-color: #EAEAEA;
-    padding-block: 2.56rem;
-    position: absolute;
-    bottom: 0;
-    left: 30%;
-    width: 40%;
-    border: none;
-    border-top-right-radius: 1.3125rem;
-    border-top-left-radius: 1.3125rem;
-}
-
-.tag_title{
-    text-align: center;
-    color: #A52A2A;
-    font-family: DM Serif Display;
-    font-size: clamp(1.2rem, 0.65rem + 2.75vw, 3.125rem);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%;
-}
-
-.tag_route{
-    text-align: center;
-    color: #A52A2A;
-    font-family: Jost;
-    font-size: clamp(0.81rem, 0.0057rem + 1.5214vw, 1.375rem);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: 0.01375rem;
 }
 
 .service_container{
@@ -45,16 +9,27 @@
     margin-top: 6.5rem;
 }
 
-.service_list{
+/* .service_list{
     width: 80%;
     margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     place-items: center;
     gap: 2.5rem;
+} */
+
+.service_list{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.service_list > *{
+    flex: 1;
 }
 
 .service_content{
+    min-width: 250px;
     width:  100%;
     border-radius: 1.875rem;
     background: #FFF;
@@ -63,6 +38,7 @@
 }
 
 .service_content2{
+    min-width: 280px;
     width:  100%;
     border-radius: 1.875rem;
     background: #F4F0EC;

@@ -7,12 +7,12 @@ const Nav = () => {
     <nav>
         <div className="home" >
           <Link href="/">
-            <img src="/rubixx.png" alt="omooo!"/>
+            <img src="/Rr.svg" alt="omooo!"/>
           </Link>
         </div>
         <div className="pages">
-          <Link className="Link" href="/services">SERVICES</Link>
           <Link className="Link" href="/about">ABOUT US</Link>
+          <Link className="Link" href="/services">SERVICES</Link>
           <Link className="Link" href="/contact">CONTACT</Link>
         </div>
     </nav>
