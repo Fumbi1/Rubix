@@ -1,95 +1,64 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client"
+import "./page.css";
+import Transition from "./Transition/page";
+import Pointer from "./contactpointer/page";
+import Link from "next/link";
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+const Home = () => {
+  
+
+  return <div>
+    <Transition />
+    <div className="main">
+      <div className="home_poster">
+        <div className="home_innerposter">
+          <p className="intro">It has to Speak!</p>
+          <p className="desc">Elevate your home or business <br/>
+          space to a World of Prestige <br/>and Elegance...</p>
+          <div className="button1">
+            <Link href="/about" className="Link">
+              <div className="click">
+                <p>
+                  Read More
+                </p>
+                <img src="/arrow.png" alt=""oops/>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="section2">
+        <div className="subsection2">
+          <div className="sec2_txt">
+            <p className="sec2_header">
+              We Create The Art<br/>
+              Of Stylish Living
+            </p>
+            <p className="sec2_desc">
+            From creating detailed floor plans and 3D renderings to selecting materials, finishes, and lighting,
+             we handle every aspect of the design process. We ensure seamless execution and
+              work closely with contractors and suppliers to transform your vision into a stunning reality.
+            </p>
+            <div className="button2">
+              <Link href="/services" className="Link">
+                <div className="click2">
+                    <p>
+                      Our Services
+                    </p>
+                    <img src="/arrow.png" />
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="sec2_image">
+            <img src="/Photo2.png" alt=""/>
+          </div>
+        </div>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+      <Pointer />
+    </div>
+  </div>;
+};
+export default Home;

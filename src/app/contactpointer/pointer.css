@@ -1,0 +1,91 @@
+.sub_section3{
+    width: 100%;
+    margin-top: 12rem;
+}
+
+.contact_card{
+    width: 80%;
+    margin-inline: auto;
+    padding-block: 5rem;
+    border-radius: 4.375rem;
+    background: #808080;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_title{
+    color: #FFF;
+    text-align: center;
+    font-family: DM Serif Display;
+    font-size: clamp(1.2rem, 0.65rem + 2.75vw, 3.125rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.card_inv{
+    color: #FFF;
+    text-align: center;
+    font-family: Jost;
+    font-size: clamp(0.8rem, 0.6357rem + 0.8214vw, 1.375rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.01375rem;
+    margin-block: 0.5rem 2rem;
+}
+
+.button3{
+    width: fit-content;
+    padding: 1.62rem 2.3rem;
+    border-radius: 1.125rem;
+    background: #D2B48C;
+    border: none;
+    box-shadow: 0px 10px 20px 0px #1F2022;
+    transition: all 750ms;
+}
+
+.Link{
+    text-decoration: none;
+}
+
+.button3:active{
+    transform: scale(0.6);
+}
+
+.click3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.62rem;
+}
+
+.click3 > p{
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Jost;
+    font-size: clamp(0.75rem, 0rem + 1.25vw, 1.125rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0.0225rem;
+}
+
+@media (max-width: 767px){
+    .contact_card{
+        width: 95%;
+        margin-inline: auto;
+        padding-block: 5rem;
+        border-radius: 4.375rem;
+        background: #808080;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
