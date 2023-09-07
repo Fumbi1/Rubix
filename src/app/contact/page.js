@@ -36,7 +36,7 @@ const Contact = () => {
   const clear = (e) => {
     setInputValue(e.target.value);
   };
-activate upon launch
+  
   const clear2 = (e) => {
     setInputValue2(e.target.value);
   };
