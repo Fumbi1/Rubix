@@ -12,6 +12,8 @@
 body {
   overflow-x: none;
   background-color: #fde9e2;
+  height: 100%; /* remove this totally upon launch*/
+  overflow-y: hidden; /* remove this totally upon launch*/
 }
 
 html {

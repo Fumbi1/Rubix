@@ -1,0 +1,96 @@
+form{
+    margin-top: 12.5rem;
+    width: 80%;
+    margin-inline: auto;
+    padding: 2rem;
+    background-color: rgba(225, 225, 225, 0.1);
+    border: 2px rgba(225, 225, 225, 0.5) solid;
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
+    
+}
+
+.form_header{
+    color: #A52A2A;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: clamp(1.2rem, 0.65rem + 2.75vw, 3.125rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0.0625rem;
+    margin-bottom: 0.5rem;
+}
+
+.form_opt_title2{
+    color: #292F36;
+    font-family: Jost;
+    font-size: clamp(0.81rem, 0.0057rem + 1.5214vw, 1.375rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.01375rem;
+}
+
+.form_div2{
+    margin-block: 3rem;
+}
+
+.form_ans2{
+    width: 90%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px #292F36 solid;
+    font-size: clamp(0.9rem, 0.0057rem + 1.5214vw, 1.375rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.01375rem;
+    color: #A52A2A;
+    background-color: transparent;
+    padding-top: 0.75rem;
+    padding-inline: 0.75rem;
+}
+
+.form_ans2:focus{
+    outline: none;
+}
+
+.form_ans2::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.contact_btn2{
+    border-radius: 1.125rem;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Jost;
+    font-size: clamp(0.75rem, 0rem + 1.25vw, 1.125rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0.0225rem;
+    background: #A52A2A;
+    padding: 1.62rem 3.38rem;
+    box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+    transition: all 750ms;
+}
+
+@media (max-width: 767px){
+    form{
+        margin-top: 12.5rem;
+        width: 95%;
+        margin-inline: auto;
+        padding: 2rem;
+        background-color: rgba(225, 225, 225, 0.1);
+        border: 2px rgba(225, 225, 225, 0.5) solid;
+        backdrop-filter: blur(5px);
+        border-radius: 1rem;
+        box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
+        
+    }
+}

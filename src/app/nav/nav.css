@@ -1,6 +1,6 @@
 .nav_container{
     width: 100%;
-    padding-block: 2rem;
+    padding-block: 1rem; /* change to 2rem on launch*/
     position: fixed;
     z-index: 3;
     top: 0;
@@ -24,12 +24,12 @@ nav{
 }
 
 .home{
-    width: 25%;
+    width: 30%; /* change to 25% upon launch */
 }
 
 .pages{
     width: 60%;
-    display: flex;
+    display: none; /* change to display flex upon launch */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
