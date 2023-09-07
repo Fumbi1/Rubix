@@ -81,7 +81,7 @@ const Home = () => {
                   </Transition2>
                   <Transition2>
                     <div className="button2">
-                      <Link href="/services" className="Link">
+                      <Link href="/" className="Link">
                         <div className="click2">
                           <p>Our Services</p>
                           <img src="/arrow.png" />
