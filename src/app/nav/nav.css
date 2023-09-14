@@ -19,12 +19,12 @@ nav{
     margin-inline: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center; /* change to space etween upon launch */
     align-items: center;
 }
 
 .home{
-    width: 30%; /* change to 25% upon launch */
+    width: 25%; /* change to 25% upon launch */
 }
 
 .pages{
@@ -57,7 +57,7 @@ nav{
         margin-inline: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center; /* change to space etween upon launch */
         align-items: center;
     }
 }

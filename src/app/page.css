@@ -78,6 +78,7 @@ button:active {
 .section2 {
   width: 100%;
   margin-top: 12.5rem;
+  display: none; /*remove after launch*/
 }
 
 .subsection2 {

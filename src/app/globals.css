@@ -10,10 +10,10 @@
 }
 
 html, body {
-  position: relative; /* to disale scroll on ios*/
+  /* position: relative; to disale scroll on ios */
   background-color: #fde9e2;
-  height: 100%; /* remove this totally upon launch*/
-  overflow: hidden; /* remove this totally upon launch*/
+  /* height: 100%; /* remove this totally upon launch*/
+  /* overflow: hidden; remove this totally upon launch */
 }
 
 img {

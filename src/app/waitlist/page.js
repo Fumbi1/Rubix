@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import emailjs from "@emailjs/browser";
 import Swal from 'sweetalert2';
@@ -11,9 +11,11 @@ const WaitList = () => {
 
   const form = useRef();
   const routes = useRouter();
+  const [disabled, setDisabled] = React.useState(false);
 
   const FormHandler = (e) => {
     e.preventDefault();
+    setDisabled(true);
     emailjs
       .sendForm(
         "service_lv8c6x6",
@@ -68,6 +70,7 @@ const WaitList = () => {
           console.log(error.text);
         }
     );
+    setDisabled(false);
   };
 
   return <div>
@@ -104,7 +107,7 @@ const WaitList = () => {
                 required
               />
             </div>
-            <button type="submit" className="contact_btn2">
+            <button type="submit" disabled={disabled} className="contact_btn2">
               Join Now!
             </button>
       </form>
