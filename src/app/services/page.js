@@ -93,7 +93,7 @@ const Services = () => {
 
           <div className="workflow_a">
             <div className="workflow_img">
-              <img src="/icon1.png" alt=""/>
+              <img src="/ico1.svg" alt=""/>
             </div>
             <div className="workflow_div">
               <Transition>
@@ -111,7 +111,7 @@ const Services = () => {
           </div>
           <div className="workflow_c">
             <div className="workflow_img">
-              <img src="/icon2.png" alt=""/>
+              <img src="/ico2.svg" alt=""/>
             </div>
             <div className="workflow_div">
               <Transition>
@@ -128,7 +128,7 @@ const Services = () => {
           </div>
           <div className="workflow_a">
             <div className="workflow_img">
-              <img src="/icon3.png" alt=""/>
+              <img src="/ico3.svg" alt=""/>
             </div>
             <div className="workflow_div">
               <Transition>
@@ -146,7 +146,7 @@ const Services = () => {
           </div>
           <div className="workflow_c">
             <div className="workflow_img">
-              <img src="/icon4.png" alt=""/>
+              <img src="/ico4.svg" alt=""/>
             </div>
             <div className="workflow_div">
               <Transition>

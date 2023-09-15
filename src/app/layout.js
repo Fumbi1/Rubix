@@ -3,7 +3,7 @@ import Footer from "./footer/page";
 import "./globals.css";
 
 export const metadata = {
-  title: "Rubix",
+  title: "Rubix | Interior Design Firm",
   description: "Welcome to Rubix's Firm!",
 };
 
