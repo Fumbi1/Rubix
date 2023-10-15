@@ -21,7 +21,7 @@ const Story = () => {
               </p>
             </Transition2>
             <Transition>
-              <p className="storyy">Welcome to Rubix Firm!</p>
+              <p className="storyy">Welcome to Rubix</p>
             </Transition>
             <Transition2>
               <p className="story">
@@ -30,6 +30,12 @@ const Story = () => {
                   design at a time.
               </p>
             </Transition2>
+
+            <div className="brochure">
+              <p>
+                Take a look at our Brochure
+              </p>
+            </div>
         </div>
     </div>
   </div>;

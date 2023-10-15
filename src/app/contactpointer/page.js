@@ -22,9 +22,8 @@ const Point = () => {
                             <Link href="/contact" className="Link">
                                 <div className="click3">
                                     <p>
-                                        Contact Us
+                                        Book Now
                                     </p>
-                                    <img src="/vectordark.png" />
                                 </div>
                             </Link>
                         </Transition2>

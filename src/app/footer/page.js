@@ -9,6 +9,7 @@ const Footer = () => {
                 <Link href="/"><img src="/rubixx.png" /></Link>
             </div>
             <div className="footer_socials">
+                {/* <p>whatsapp,insta,linkedin,X</p> */}
                 <a href="https://www.instagram.com/callrubix/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank" rel="noopener noreferrer">
                     <img src="/insta.png" alt="" />
                 </a>
@@ -27,12 +28,6 @@ const Footer = () => {
             <div className="mail">
                 <p>comms.rubix@gmail.com</p>
             </div>
-        </div>
-
-        <div className="footer_right">
-            <Link className="footer_link" href="/services">Services</Link>
-            <Link className="footer_link" href="/about">About Us</Link>
-            <Link className="footer_link" href="/contact">Contact</Link>
         </div>
     </div>
   </div>;

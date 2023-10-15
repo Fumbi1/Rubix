@@ -141,14 +141,14 @@ const Contact = () => {
               type="text"
               name="name"
               className="form_ans"
-              placeholder="e.g, John Doe Wesley"
+              placeholder="John Wesley"
         
               required
             />
           </div>
           <div className="form_div">
             <label for="" className="form_opt_title">
-              Contact Number
+              Phone Number
             </label>
             <br />
             <input

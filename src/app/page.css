@@ -29,8 +29,10 @@
   background-position: center;
   width: 100vw;
   height: 100%;
-  padding-block: 12.5rem;
-  border-bottom-left-radius: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  border-bottom-left-radius: 3.5rem;
+  border-bottom-right-radius: 3.5rem;
 }
 
 .home_innerposter {
@@ -38,14 +40,18 @@
   margin-inline: auto;
 }
 
+.distinct{
+  color: #FAF9F6;
+}
+
 .button1 {
-  width: 22.5%;
   z-index: 50;
-  padding: 1.62rem 3rem;
+  width: fit-content;
+  background-color: #573324;
+  padding: 1rem 1.5rem;
   margin-block: 1rem;
   border: none;
   border-radius: 1.125rem;
-  background: #573324;
   box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
   transition: all 750ms;
 }
@@ -68,7 +74,7 @@ button:active {
   color: #fff;
   text-align: center;
   font-family: Jost;
-  font-size: clamp(0.75rem, 0rem + 1.25vw, 1.125rem);
+  font-size: clamp(0.6rem, 0.0286rem + 1.3571vw, 1.25rem);
   font-style: normal;
   font-weight: 600;
   line-height: 125%;
@@ -78,7 +84,7 @@ button:active {
 .section2 {
   width: 100%;
   margin-top: 12.5rem;
-  display: none; /*remove after launch*/
+  /* display: none; remove after launch */
 }
 
 .subsection2 {
@@ -95,7 +101,7 @@ button:active {
 }
 
 .sec2_header {
-  color: brown;
+  color: #543324;
   font-family: DM Serif Display;
   font-size: clamp(1.2rem, 0.65rem + 2.75vw, 3.125rem);
   font-style: normal;
@@ -116,11 +122,11 @@ button:active {
 }
 
 .button2 {
-  width: 42.5%;
-  padding: 1.62rem 1.94rem;
+  width: fit-content;
+  background-color: #573324;
+  padding: 1rem 1.5rem;
   border: none;
   border-radius: 1.125rem;
-  background: #573324;
   box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
   transition: all 750ms;
 }

@@ -1,16 +1,14 @@
 .nav_container{
     width: 100%;
-    padding-block: 1rem; /* change to 2rem on launch*/
+    padding-block: 0.5rem; /* change to 2rem on launch*/
     position: fixed;
     z-index: 3;
     top: 0;
     left: 0;
-    background: transparent ;
+    background: white ;
     border-bottom-left-radius: 3.5rem;
     border-bottom-right-radius: 3.5rem;
     border-bottom: none;
-    backdrop-filter: blur(5px);
-    filter: brightness(75%);
     box-shadow: 4px 4px 40px 4px rgba(0, 0, 0, 0.6);
 }
 
@@ -19,17 +17,17 @@ nav{
     margin-inline: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center; /* change to space etween upon launch */
+    justify-content: space-between; /* change to space etween upon launch */
     align-items: center;
 }
 
 .home{
-    width: 25%; /* change to 25% upon launch */
+    width: 15%; /* change to 25% upon launch */
 }
 
 .pages{
-    width: 60%;
-    display: none; /* change to display flex upon launch */
+    width: 30%;
+    display: flex; /* change to display flex upon launch */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -51,13 +49,44 @@ nav{
     color: blue;
 }
 
+.consultation{
+    background-color: #573324;
+    padding: 0.875rem 0.75rem;
+    border-radius: 0.675rem;
+    transition: all 500ms;
+}
+
+.consultation:hover{
+    transform: scale(0.95);
+}
+
+.Link22{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: Jost;
+    font-size: clamp(0.6rem, 0.0286rem + 1.3571vw, 1.25rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    transition: all 500ms;
+}
+
+.Link22:hover{
+    text-decoration: underline;
+}
+
+.Link22:active{
+    text-decoration: underline;
+}
+
 @media (max-width: 767px) {
     nav{
         width: 90%;
         margin-inline: auto;
         display: flex;
         flex-direction: row;
-        justify-content: center; /* change to space etween upon launch */
+        justify-content: space-between; /* change to space etween upon launch */
         align-items: center;
     }
 }

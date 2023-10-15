@@ -5,8 +5,15 @@ import Pointer from "./contactpointer/page";
 import Link from "next/link";
 import Transition from "./Transition/page";
 import Transition2 from "./Trsansition2/page";
+import { useRouter } from "next/navigation";
 
 const Home = () => {
+
+  const Route = useRouter();
+
+  const path = () => {
+    Route.push("/waitlist")
+  }
   return (
     <div>
       <AnimatePresence mode="wait">
@@ -26,8 +33,8 @@ const Home = () => {
               <div className="home_innerposter">
                 <Transition>
                   <p className="intro">
-                    Welcome to where opulence and Creativity Meets Spaces,
-                    Seamlessly
+                    Welcome to where <span className="distinct">Opulence</span> and <span className="distinct">Creativity</span> meets spaces,
+                    seamlessly.
                   </p>
                 </Transition>
                 <Transition2>
@@ -38,6 +45,7 @@ const Home = () => {
                 </Transition2>
                 <Transition2>
                   <motion.div
+                    onClick={path}
                     className="button1"
                     transition={{
                       duration: 0.75,
@@ -49,12 +57,12 @@ const Home = () => {
                       y: ["30%", "-30%"],
                     }}
                   >
-                    <Link href="/waitlist" className="Link">
+                    <div className="Link">
                       <div className="click">
-                        <p>Join Our Waitlist</p>
+                        <p>Join our Waitlist</p>
                         <img src="/arrow.png" alt="" oops />
                       </div>
-                    </Link>
+                    </div>
                   </motion.div>
                 </Transition2>
               </div>
@@ -80,13 +88,13 @@ const Home = () => {
                     </p>
                   </Transition2>
                   <Transition2>
-                    <div className="button2">
-                      <Link href="/" className="Link">
+                    <div onClick={() => {Route.push("/services")}} className="button2">
+                      <div className="Link">
                         <div className="click2">
                           <p>Our Services</p>
                           <img src="/arrow.png" />
                         </div>
-                      </Link>
+                      </div>
                     </div>
                   </Transition2>
                 </div>

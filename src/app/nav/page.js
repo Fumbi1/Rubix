@@ -1,7 +1,10 @@
+"use client"
 import Link from "next/link";
 import "./nav.css"
+import { useRouter } from "next/navigation";
 
 const Nav = () => {
+  const Direct = useRouter();
 
   return <div className="nav_container">    
     <nav>
@@ -11,9 +14,11 @@ const Nav = () => {
           </Link>
         </div>
         <div className="pages">
-          <Link className="Link" href="/about">ABOUT US</Link>
-          <Link className="Link" href="/services">SERVICES</Link>
-          <Link className="Link" href="/contact">CONTACT</Link>
+          <Link className="Link" href="/about">About</Link>
+          <Link className="Link" href="/services">Services</Link>
+          <div onClick={() => {Direct.push("/contact")}} className="consultation">
+            <div className="Link22">Book Now</div>
+          </div>
         </div>
     </nav>
   </div>;

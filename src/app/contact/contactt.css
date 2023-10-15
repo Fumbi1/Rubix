@@ -3,7 +3,8 @@ form{
     width: 80%;
     margin-inline: auto;
     padding: 2rem;
-    background-color: rgba(225, 225, 225, 0.1);
+    background: #FAF9F6;
+    filter: brightness(90%);
     border: 2px rgba(225, 225, 225, 0.5) solid;
     backdrop-filter: blur(10px);
     border-radius: 1rem;
@@ -12,7 +13,7 @@ form{
 }
 
 .form_header{
-    color: #A52A2A;
+    color: #573324;
     text-align: center;
     font-family: DM Serif Display;
     font-size: clamp(1.2rem, 0.65rem + 2.75vw, 3.125rem);
@@ -48,10 +49,20 @@ form{
     font-weight: 400;
     line-height: 150%;
     letter-spacing: 0.01375rem;
-    color: #A52A2A;
+    color: #573324;
     background-color: transparent;
     padding-top: 0.75rem;
     padding-inline: 0.75rem;
+}
+
+.form_ans::placeholder{
+    font-size: clamp(0.8rem, 0.0057rem + 1.5214vw, 1rem);
+    opacity: 0.75;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.01375rem;
+    color: #573324;
 }
 
 .form_ans:focus{
@@ -86,7 +97,6 @@ fieldset {
 
 
 .contact_btn{
-    border-radius: 1.125rem;
     border: none;
     color: #FFF;
     text-align: center;
@@ -96,8 +106,9 @@ fieldset {
     font-weight: 600;
     line-height: 125%;
     letter-spacing: 0.0225rem;
-    background: #A52A2A;
-    padding: 1.62rem 3.38rem;
+    background-color: #573324;
+    padding: 0.875rem 0.75rem;
+    border-radius: 0.675rem;
     box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
     transition: all 750ms;
 }

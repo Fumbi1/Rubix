@@ -47,7 +47,7 @@
 }
 
 .service_title{
-    color: #A52A2A;
+    color: #573324;
     text-align: center;
     font-family: DM Serif Display;
     font-size: clamp(1rem, 0.8393rem + 0.8036vw, 1.5625rem);
@@ -77,12 +77,13 @@
     width: 80%;
     margin-inline: auto;
     border-radius: 4.375rem;
-    background: #F4F0EC;
+    background: #FAF9F6;
+    filter: brightness(90%);
     padding: 8rem 7.25rem;
 }
 
 .workflow_header{
-    color: #A52A2A;
+    color: #573324;
     text-align: center;
     font-family: DM Serif Display;
     font-size: clamp(1.2rem, 0.65rem + 2.75vw, 3.125rem);
@@ -135,7 +136,7 @@
 }
 
 .workflow_title{
-    color: #A52A2A;
+    color: #573324;
     text-align: left;
     font-family: DM Serif Display;
     font-size: clamp(1rem, 0.6607rem + 1.6964vw, 2.1875rem);
