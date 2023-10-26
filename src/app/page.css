@@ -63,6 +63,7 @@ button:active {
 .click {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 0.62rem;
 }
 
@@ -74,7 +75,7 @@ button:active {
   color: #fff;
   text-align: center;
   font-family: Jost;
-  font-size: clamp(0.6rem, 0.0286rem + 1.3571vw, 1.25rem);
+  font-size: clamp(0.75rem, 0.0286rem + 1.3571vw, 1.25rem);
   font-style: normal;
   font-weight: 600;
   line-height: 125%;
@@ -182,23 +183,4 @@ button:active {
     width: 100%;
   }
 
-  .button1 {
-    width: 57.5%;
-    padding: 1.62rem 3rem;
-    border: none;
-    border-radius: 1.125rem;
-    background: #563326;
-    box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
-    transition: all 750ms;
-  }
-
-  .button2 {
-    width: 50%;
-    padding: 1.62rem 1.94rem;
-    border: none;
-    border-radius: 1.125rem;
-    background: #573324;
-    box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
-    transition: all 750ms;
-  }
 }

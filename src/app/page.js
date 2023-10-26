@@ -2,7 +2,6 @@
 import "./page.css";
 import { motion, AnimatePresence } from "framer-motion";
 import Pointer from "./contactpointer/page";
-import Link from "next/link";
 import Transition from "./Transition/page";
 import Transition2 from "./Trsansition2/page";
 import { useRouter } from "next/navigation";
