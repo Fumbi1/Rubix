@@ -32,8 +32,7 @@ const Home = () => {
               <div className="home_innerposter">
                 <Transition>
                   <p className="intro">
-                    Welcome to where <span className="distinct">Opulence</span> and <span className="distinct">Creativity</span> meets spaces,
-                    seamlessly.
+                    Elevate Your Space with<span className="distinct">Luxury & Elegance</span> 
                   </p>
                 </Transition>
                 <Transition2>
@@ -99,10 +98,16 @@ const Home = () => {
                 </div>
                 <div className="sec2_image">
                   <Transition>
-                    <img src="/Photo2.png" alt="" />
+                    <img src="/create.jpg" alt="" className="curve"/>
                   </Transition>
                 </div>
               </div>
+            </div>
+
+            <div className="section3">
+              <div></div>
+              <div></div>
+              <div></div>
             </div>
             <Pointer />
           </div>

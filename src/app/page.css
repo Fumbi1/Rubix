@@ -1,6 +1,6 @@
 
 .intro {
-  color: #201e1e;
+  color: #573324;
   font-family: 'Josefin Sans', sans-serif;
   font-size: clamp(1.7rem, 0.025rem + 5.875vw, 5.3125rem);
   filter: brightness(100%);
@@ -14,7 +14,6 @@
   color: #fde9e2;
   font-family: 'Josefin Sans', sans-serif;
   font-size: clamp(0.81rem, 0.0057rem + 1.5214vw, 1.375rem);
-  backdrop-filter: blur(5px);
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
@@ -24,11 +23,11 @@
 
 
 .home_poster {
-  background: url(/tv.jpg), lightgray 50% / cover no-repeat;
-  background-size: cover;
+  background: url(/modern.jpg), lightgray 50% / cover no-repeat;
+  background-size: contain;
   background-position: center;
-  width: 100vw;
-  height: 100%;
+  width: 100%;
+  height: fit-content;
   padding-top: 10rem;
   padding-bottom: 5rem;
   border-bottom-left-radius: 3.5rem;
@@ -120,6 +119,10 @@ button:active {
   line-height: 150%;
   letter-spacing: 0.01375rem;
   margin-block: 2.06rem 2.81rem;
+}
+
+.curve{
+  border-radius: 0.675rem;
 }
 
 .button2 {
