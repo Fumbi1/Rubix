@@ -5,6 +5,8 @@ Rubix is a web app that connects residents in Nigeria with professional interior
 Design styles: Users can explore different design styles such as modern, minimalist, rustic, industrial, etc.
 
 Quotes and bookings: Users can request quotes from their chosen designer, compare prices, and negotiate terms. Users can also book appointments with their designer, either online or offline.
+
+
 This web app is built with:
 
 Next.js

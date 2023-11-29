@@ -81,9 +81,30 @@ button:active {
   letter-spacing: 0.0225rem;
 }
 
+.hero{
+  width: 97.5%;
+  background-color: #573324;
+  margin-inline: auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding-inline: 5%;
+  padding-block: 1rem;
+  border-radius: 1.675rem;
+}
+
+.intro2 {
+  color: #fde9e2;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: clamp(1.2rem, 0.65rem + 2.75vw, 2.825rem);
+  filter: brightness(100%);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+}
+
 .section2 {
   width: 100%;
-  margin-top: 12.5rem;
+  margin-top: 5.5rem;
   /* display: none; remove after launch */
 }
 
@@ -95,6 +116,16 @@ button:active {
   align-items: center;
   justify-content: space-between;
 }
+
+.subsection2a {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 .sec2_txt {
   width: 45%;
@@ -169,6 +200,16 @@ button:active {
   }
 
   .subsection2 {
+    width: 95%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .subsection2a {
     width: 95%;
     margin-inline: auto;
     display: flex;
