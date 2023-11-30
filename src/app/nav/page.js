@@ -12,7 +12,8 @@ const Nav = () => {
   const navRef = useRef(null);
 
   // Set the scroll threshold at which you want to change the background
-  const scrollThreshold = 625;
+  // const scrollThreshold = 625;
+  const scrollThreshold = 25;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,9 +38,9 @@ const Nav = () => {
   return <motion.div
     className="nav_container"
     ref={navRef}
-    initial={{ backgroundColor: 'transparent' }}
+    initial={{ backgroundColor: 'transparent', backdropFilter: 'blur(30px)' }}
     animate={navControls}
-    transition={{ duration: 0.5 }}
+    transition={{ duration: 0.75 }}
   >    
     <nav>
         <div className="home" >
@@ -58,21 +59,3 @@ const Nav = () => {
   </motion.div>;
 };
 export default Nav;
-
-
-// import { useViewportScroll, useTransform } from "framer-motion";
-
-// function App() {
-//   const { scrollY } = useScroll();
-//   const backgroundColor = useTransform(
-//     scrollY,
-//     [0, 100],
-//     ["transparent", "white"]
-//   );
-
-//   return (
-//     <nav style={{ backgroundColor }}>
-//       {/* Navigation content */}
-//     </nav>
-//   );
-// }

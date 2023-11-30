@@ -23,8 +23,8 @@
 
 
 .home_poster {
-  background: url(/modern.jpg), lightgray 50% / cover no-repeat;
-  background-size: contain;
+  background: url(/new.jpg), lightgray 50% / cover no-repeat;
+  background-size: cover;
   background-position: center;
   width: 100%;
   height: fit-content;
@@ -85,7 +85,7 @@ button:active {
   width: 97.5%;
   background-color: #573324;
   margin-inline: auto;
-  margin-top: 5rem;
+  margin-top: 7.5rem;
   margin-bottom: 2rem;
   padding-inline: 5%;
   padding-block: 1rem;

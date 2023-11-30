@@ -69,13 +69,13 @@ const Home = () => {
                     <Transition3 delay={3.4}>e</Transition3>
                   </span>
                 </p>
-                <Transition2>
+                <Transition3 delay={3.5}>
                   <p className="desc">
                     Want early access to premium offers and get notified when
                     you launch?
                   </p>
-                </Transition2>
-                <Transition2>
+                </Transition3>
+                <Transition3 delay={4.2}>
                   <motion.div
                     onClick={path}
                     className="button1"
@@ -96,18 +96,18 @@ const Home = () => {
                       </div>
                     </div>
                   </motion.div>
-                </Transition2>
+                </Transition3>
               </div>
             </div>
 
             <motion.div className="hero"
             transition={{
-              duration: 15,
+              duration: 20,
               repeat: Infinity,
               yoyo: Infinity,
             }}
             animate={{
-              background: ['#573324', '#4d5053', '#573324'],
+              background: ['#4d5053', '#573324', '#000000', '#4d5053'],
             }}>
               <Transition2>
                 <p className="intro2">
