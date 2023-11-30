@@ -1,6 +1,7 @@
 "use client";
 import "./page.css";
 import { motion, AnimatePresence } from "framer-motion";
+import React,{ useState,useEffect } from "react";
 import Pointer from "./contactpointer/page";
 import Transition from "./Transition/page";
 import Transition2 from "./Trsansition2/page";
@@ -13,22 +14,16 @@ const Home = () => {
   const path = () => {
     Route.push("/waitlist");
   };
+
+
   return (
     <div>
       <AnimatePresence mode="wait">
         <div>
-          {/* <motion.div
-          variants={transitionVariants}
-          className="slide_in"
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          transition={{delay: 0.8, duration: 2.4, ease: "easeInOut"}}
-        >
-        </motion.div> */}
 
           <div className="main">
-            <div className="home_poster">
+            <div className="home_poster"
+            >
               <div className="home_innerposter">
                 <p className="intro">
                   <Transition3 delay={0}>E</Transition3>
@@ -237,15 +232,6 @@ const Home = () => {
             </div>
             <Pointer />
           </div>
-
-          {/* <motion.div
-        className="slide_out"
-        initial={{scaleY: 1}}
-        animate={{scaleY: 0}}
-        exit={{scaleY: 0}}
-        transition={{duration: 2, ease: [0.22, 1, 0.36, 1]}}
-        >
-        </motion.div> */}
         </div>
       </AnimatePresence>
       ;

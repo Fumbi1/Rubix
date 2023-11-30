@@ -31,7 +31,7 @@ const Story = () => {
                   scale: 1.2,
                   transition: { duration: 0.5 },
                 }}
-                whileTap={{ rotate: 45 }}
+                whileTap={{ scale: 1.25 }}
               >
                 <div className="cover">
                   <p className="card_header">Our Vision:</p>
@@ -63,7 +63,7 @@ const Story = () => {
                 scale: 1.2,
                 transition: { duration: 0.5 },
               }}
-              whileTap={{ rotate: -45 }}>
+              whileTap={{ scale: 1.25 }}>
                 <div className="cover">
                   <p className="card_header">Our Portfolio:</p>
                   <p className="card_desc">Explore our diverse portfolio, showcasing our mastery in various 

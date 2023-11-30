@@ -1,7 +1,6 @@
-
 .intro {
   color: #573324;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: clamp(1.7rem, 0.025rem + 5.875vw, 5.3125rem);
   filter: brightness(100%);
   font-style: normal;
@@ -9,10 +8,9 @@
   line-height: 125%;
 }
 
-
 .desc {
-  color: #fde9e2;
-  font-family: 'Josefin Sans', sans-serif;
+  color: #573324;
+  font-family: "Josefin Sans", sans-serif;
   font-size: clamp(0.81rem, 0.0057rem + 1.5214vw, 1.375rem);
   font-style: normal;
   font-weight: 600;
@@ -21,9 +19,8 @@
   margin-block: 1.5rem;
 }
 
-
 .home_poster {
-  background: url(/new.jpg), lightgray 50% / cover no-repeat;
+  background: url(/new.jpg) lightgray 50% / cover no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -32,6 +29,32 @@
   padding-bottom: 5rem;
   border-bottom-left-radius: 3.5rem;
   border-bottom-right-radius: 3.5rem;
+  animation: image 75s linear infinite alternate;
+  transition: background-image 1s ease-in-out;
+  animation-delay: 5s;
+}
+
+@keyframes image {
+  0% {
+    background: url(/new.jpg) lightgray 50% / cover no-repeat;
+  }
+
+  25% {
+    background: url(/z9.jpg) lightgray 50% / cover no-repeat;
+  }
+
+  50% {
+    background: url(/z4.jpg) lightgray 50% / cover no-repeat;
+  }
+
+
+  75% {
+    background: url(/z5.jpg) lightgray 50% / cover no-repeat;
+  }
+
+  100% {
+    background: url(/z6.jpg) lightgray 50% / cover no-repeat;
+  }
 }
 
 .home_innerposter {
@@ -39,8 +62,8 @@
   margin-inline: auto;
 }
 
-.distinct{
-  color: #FAF9F6;
+.distinct {
+  color: #faf9f6;
 }
 
 .button1 {
@@ -81,7 +104,7 @@ button:active {
   letter-spacing: 0.0225rem;
 }
 
-.hero{
+.hero {
   width: 97.5%;
   background-color: #573324;
   margin-inline: auto;
@@ -94,7 +117,7 @@ button:active {
 
 .intro2 {
   color: #fde9e2;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: clamp(1.2rem, 0.65rem + 2.75vw, 2.825rem);
   filter: brightness(100%);
   font-style: normal;
@@ -126,7 +149,6 @@ button:active {
   justify-content: space-between;
 }
 
-
 .sec2_txt {
   width: 45%;
 }
@@ -152,7 +174,7 @@ button:active {
   margin-block: 2.06rem 2.81rem;
 }
 
-.curve{
+.curve {
   border-radius: 0.675rem;
 }
 
@@ -226,5 +248,4 @@ button:active {
   .sec2_image {
     width: 100%;
   }
-
 }

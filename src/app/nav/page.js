@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import Link from "next/link";
-import "./nav.css"
-import React, { useEffect, useRef } from 'react';
+import "./nav.css";
+import React, { useEffect, useRef } from "react";
 import { useRouter, usePathname } from "next/navigation";
-import { motion, useAnimation } from 'framer-motion';
+import { motion, useAnimation } from "framer-motion";
 
 const Nav = () => {
   const Location = usePathname();
@@ -18,44 +18,67 @@ const Nav = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > scrollThreshold) {
-        navControls.start({ backgroundColor: '#FFFFFF' });
+        navControls.start({
+          backgroundColor: "#FFFFFF",
+          boxShadow: "4px 4px 40px 4px rgba(0, 0, 0, 0.6)",
+        });
       } else {
-        navControls.start({ backgroundColor: 'transparent', backdropFilter: 'blur(30px)' });
+        navControls.start({ backgroundColor: "transparent", boxShadow: "none"});
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Remove the event listener when the component unmounts
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [navControls]);
 
-
-  
-
-  return <motion.div
-    className="nav_container"
-    ref={navRef}
-    initial={{ backgroundColor: 'transparent', backdropFilter: 'blur(30px)' }}
-    animate={navControls}
-    transition={{ duration: 0.75 }}
-  >    
-    <nav>
-        <div className="home" >
+  return (
+    <motion.div
+      className="nav_container"
+      ref={navRef}
+      initial={{ backgroundColor: "transparent", boxShadow: "none" }}
+      animate={navControls}
+      transition={{ duration: 0.75 }}
+    >
+      <nav>
+        <div className="home">
           <Link href="/">
-            <img src="/Rr.svg" alt="omooo!"/>
+            <img src="/Rr.svg" alt="omooo!" />
           </Link>
         </div>
         <div className="pages">
-          <Link className={Location === "/about"? "Link_active" : "Link"} href="/about">About</Link>
-          <Link className={Location === "/services"? "Link_active" : "Link"} href="/services">Services</Link>
-          <div onClick={() => {Direct.push("/contact")}} className={Location === "/contact"? "consultation_active" : "consultation"}>
-            <div className={Location === "/contact"? "Link22_active" : "Link22"}>Book Now</div>
+          <Link
+            className={Location === "/about" ? "Link_active" : "Link"}
+            href="/about"
+          >
+            About
+          </Link>
+          <Link
+            className={Location === "/services" ? "Link_active" : "Link"}
+            href="/services"
+          >
+            Services
+          </Link>
+          <div
+            onClick={() => {
+              Direct.push("/contact");
+            }}
+            className={
+              Location === "/contact" ? "consultation_active" : "consultation"
+            }
+          >
+            <div
+              className={Location === "/contact" ? "Link22_active" : "Link22"}
+            >
+              Book Now
+            </div>
           </div>
         </div>
-    </nav>
-  </motion.div>;
+      </nav>
+    </motion.div>
+  );
 };
 export default Nav;
