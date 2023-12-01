@@ -10,7 +10,7 @@ const Services = () => {
   return <div>
     <main>
       <div className="service_main">
-        <img src="/service.png" alt="" />
+        <img src="/service.png" width="100%" height="10%" alt="" />
       </div>
 
       <div className="service_container">

@@ -19,7 +19,7 @@
 .card_title{
     color: #FFF;
     text-align: center;
-    font-family: DM Serif Display;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: clamp(1.2rem, 0.65rem + 2.75vw, 3.125rem);
     font-style: normal;
     font-weight: 400;

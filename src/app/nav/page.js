@@ -41,7 +41,7 @@ const Nav = () => {
       ref={navRef}
       initial={{ backgroundColor: "transparent", boxShadow: "none" }}
       animate={navControls}
-      transition={{ duration: 0.75 }}
+      
     >
       <nav>
         <div className="home">

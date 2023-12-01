@@ -20,7 +20,7 @@
 }
 
 .home_poster {
-  background: url(/new.jpg) lightgray 50% / cover no-repeat;
+  background: url(/new0.jpg) lightgray 50% / cover no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -29,30 +29,67 @@
   padding-bottom: 5rem;
   border-bottom-left-radius: 3.5rem;
   border-bottom-right-radius: 3.5rem;
-  animation: image 75s linear infinite alternate;
-  transition: background-image 1s ease-in-out;
-  animation-delay: 5s;
+  animation: image 30s linear infinite alternate;
+  transition: all 1s ease-in-out;
+  animation-delay: 7s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
+
 
 @keyframes image {
   0% {
-    background: url(/new.jpg) lightgray 50% / cover no-repeat;
+    background: url(/new0.jpg) lightgray 50% / cover no-repeat;
   }
 
-  25% {
-    background: url(/z9.jpg) lightgray 50% / cover no-repeat;
-  }
-
-  50% {
+  10% {
+    opacity: 1;
     background: url(/z4.jpg) lightgray 50% / cover no-repeat;
   }
 
+  20% {
+    opacity: 1;
+    background: url(/z5.jpg) lightgray 50% / cover no-repeat;
+  }
 
-  75% {
+  30% {
+    opacity: 1;
+    background: url(/z1.jpg) lightgray 50% / cover no-repeat;
+  }
+
+  40% {
+    opacity: 1;
+    background: url(/z6.jpg) lightgray 50% / cover no-repeat;
+  }
+
+  50% {
+    opacity: 1;
+    background: url(/z7.jpg) lightgray 50% / cover no-repeat;
+  }
+
+  60% {
+    opacity: 1;
+    background: url(/z2.jpg) lightgray 50% / cover no-repeat;
+  }
+
+  70% {
+    opacity: 1;
+    background: url(/z9.jpg) lightgray 50% / cover no-repeat;
+  }
+
+  80% {
+    opacity: 1;
+    background: url(/z8.jpg) lightgray 50% / cover no-repeat;
+  }
+
+
+  90% {
+    opacity: 1;
     background: url(/z5.jpg) lightgray 50% / cover no-repeat;
   }
 
   100% {
+    opacity: 1;
     background: url(/z6.jpg) lightgray 50% / cover no-repeat;
   }
 }

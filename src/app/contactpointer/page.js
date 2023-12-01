@@ -11,7 +11,7 @@ const Point = () => {
                 <div className="contact_card">
                     <Transition>
                         <p className="card_title">
-                            Wanna join the interno?
+                            Elevate Your Space with Our Exclusive Services
                         </p>
                         <p className="card_inv">
                             You're just a step away.

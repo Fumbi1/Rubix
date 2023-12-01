@@ -1,7 +1,7 @@
 "use client";
 import "./page.css";
 import { motion, AnimatePresence } from "framer-motion";
-import React,{ useState,useEffect } from "react";
+import React,{ useState, useCallback, useEffect } from "react";
 import Pointer from "./contactpointer/page";
 import Transition from "./Transition/page";
 import Transition2 from "./Trsansition2/page";
@@ -15,6 +15,41 @@ const Home = () => {
     Route.push("/waitlist");
   };
 
+  // const imgs = [
+  //   "/new.jpg",
+  //   "/z9.jpg",
+  //   "/z4.jpg",
+  //   "/z5.jpg",
+  //   "/z6.jpg",
+  // ]
+
+  // const imageVariants = {
+  //   initial: { opacity: 0 },
+  //   animate: { opacity: 1 },
+  //   exit: { opacity: 0 },
+  // };
+
+  // const [index, setIndex] = React.useState(0);
+
+  // const Loop = useCallback(() =>{
+  //   setIndex(index + 1);
+  // }, [index])
+
+  // useEffect(() => {
+  //   if (index >= imgs.length){
+  //     setIndex(0);
+  //   }
+  // }, [index])
+
+  // useEffect(() => {
+  //   let Interval = setInterval(() => {
+  //     Loop();
+  //   }, 10000)
+
+  //   console.log(index)
+  //   return () => clearInterval(Interval);
+  // },[index])
+
 
   return (
     <div>
@@ -22,7 +57,24 @@ const Home = () => {
         <div>
 
           <div className="main">
-            <div className="home_poster"
+            <motion.div className="home_poster"
+            // key={index}
+            // variants={imageVariants}
+            // initial="initial"
+            // animate="animate"
+            // exit="exit"
+
+            // transition={{
+            //   duration: 0.75,
+            //   ease: "easeOut",
+            //   repeat: Infinity,
+            //   yoyo: Infinity,
+            // }}
+
+
+            // style={{
+            //   backgroundImage: `url(${imgs[index]})`,
+            // }}
             >
               <div className="home_innerposter">
                 <p className="intro">
@@ -93,7 +145,7 @@ const Home = () => {
                   </motion.div>
                 </Transition3>
               </div>
-            </div>
+            </motion.div>
 
             <motion.div className="hero"
             transition={{
