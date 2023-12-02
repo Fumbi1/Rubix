@@ -20,7 +20,7 @@
 }
 
 .home_poster {
-  background: url(/new0.jpg) lightgray 50% / cover no-repeat;
+  background-image: url('/new.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -39,58 +39,58 @@
 
 @keyframes image {
   0% {
-    background: url(/new0.jpg) lightgray 50% / cover no-repeat;
+    background-image: url(/new.jpg);
   }
 
   10% {
     opacity: 1;
-    background: url(/z4.jpg) lightgray 50% / cover no-repeat;
+    background-image: url(/z4.jpg);
   }
 
   20% {
     opacity: 1;
-    background: url(/z5.jpg) lightgray 50% / cover no-repeat;
+    background-image: url(/z5.jpg);
   }
 
   30% {
     opacity: 1;
-    background: url(/z1.jpg) lightgray 50% / cover no-repeat;
+    background-image: url(/z1.jpg);
   }
 
   40% {
     opacity: 1;
-    background: url(/z6.jpg) lightgray 50% / cover no-repeat;
+    background-image: url(/z6.jpg) lightgray 50%;
   }
 
   50% {
     opacity: 1;
-    background: url(/z7.jpg) lightgray 50% / cover no-repeat;
+    background-image: url(/z7.jpg);
   }
 
   60% {
     opacity: 1;
-    background: url(/z2.jpg) lightgray 50% / cover no-repeat;
+    background-image: url(/z2.jpg);
   }
 
   70% {
     opacity: 1;
-    background: url(/z9.jpg) lightgray 50% / cover no-repeat;
+    background-image: url(/z9.jpg);
   }
 
   80% {
     opacity: 1;
-    background: url(/z8.jpg) lightgray 50% / cover no-repeat;
+    background-image: url(/z8.jpg);
   }
 
 
   90% {
     opacity: 1;
-    background: url(/z5.jpg) lightgray 50% / cover no-repeat;
+    background-image: url(/tv.jpg);
   }
 
   100% {
     opacity: 1;
-    background: url(/z6.jpg) lightgray 50% / cover no-repeat;
+    background-image: url(/y1.jpg);
   }
 }
 

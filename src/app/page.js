@@ -15,40 +15,6 @@ const Home = () => {
     Route.push("/waitlist");
   };
 
-  // const imgs = [
-  //   "/new.jpg",
-  //   "/z9.jpg",
-  //   "/z4.jpg",
-  //   "/z5.jpg",
-  //   "/z6.jpg",
-  // ]
-
-  // const imageVariants = {
-  //   initial: { opacity: 0 },
-  //   animate: { opacity: 1 },
-  //   exit: { opacity: 0 },
-  // };
-
-  // const [index, setIndex] = React.useState(0);
-
-  // const Loop = useCallback(() =>{
-  //   setIndex(index + 1);
-  // }, [index])
-
-  // useEffect(() => {
-  //   if (index >= imgs.length){
-  //     setIndex(0);
-  //   }
-  // }, [index])
-
-  // useEffect(() => {
-  //   let Interval = setInterval(() => {
-  //     Loop();
-  //   }, 10000)
-
-  //   console.log(index)
-  //   return () => clearInterval(Interval);
-  // },[index])
 
 
   return (
@@ -57,24 +23,7 @@ const Home = () => {
         <div>
 
           <div className="main">
-            <motion.div className="home_poster"
-            // key={index}
-            // variants={imageVariants}
-            // initial="initial"
-            // animate="animate"
-            // exit="exit"
-
-            // transition={{
-            //   duration: 0.75,
-            //   ease: "easeOut",
-            //   repeat: Infinity,
-            //   yoyo: Infinity,
-            // }}
-
-
-            // style={{
-            //   backgroundImage: `url(${imgs[index]})`,
-            // }}
+            <div className="home_poster" 
             >
               <div className="home_innerposter">
                 <p className="intro">
@@ -145,7 +94,7 @@ const Home = () => {
                   </motion.div>
                 </Transition3>
               </div>
-            </motion.div>
+            </div>
 
             <motion.div className="hero"
             transition={{
