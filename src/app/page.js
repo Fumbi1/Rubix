@@ -1,7 +1,7 @@
 "use client";
 import "./page.css";
 import { motion, AnimatePresence } from "framer-motion";
-import React,{ useState, useCallback, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import Pointer from "./contactpointer/page";
 import Transition from "./Transition/page";
 import Transition2 from "./Trsansition2/page";
@@ -15,16 +15,12 @@ const Home = () => {
     Route.push("/waitlist");
   };
 
-
-
   return (
     <div>
       <AnimatePresence mode="wait">
         <div>
-
           <div className="main">
-            <div className="home_poster" 
-            >
+            <div className="home_poster">
               <div className="home_innerposter">
                 <p className="intro">
                   <Transition3 delay={0}>E</Transition3>
@@ -88,7 +84,7 @@ const Home = () => {
                     <div className="Link">
                       <div className="click">
                         <p>Join our Waitlist</p>
-                        <img src="/arrow.png" alt="" oops />
+                        <img src="/arrow.png" alt="oops" />
                       </div>
                     </div>
                   </motion.div>
@@ -96,21 +92,23 @@ const Home = () => {
               </div>
             </div>
 
-            <motion.div className="hero"
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              yoyo: Infinity,
-            }}
-            animate={{
-              background: ['#4d5053', '#573324', '#000000', '#4d5053'],
-            }}>
+            <motion.div
+              className="hero"
+              transition={{
+                duration: 20,
+                repeat: Infinity,
+                yoyo: Infinity,
+              }}
+              animate={{
+                background: ["#4d5053", "#573324", "#000000", "#4d5053"],
+              }}
+            >
               <Transition2>
                 <p className="intro2">
-                  At Rubix, we believe that your living spaces are more than just
-                  four walls; they're a canvas for your dreams. We are a bespoke
-                  interior design company dedicated to transforming ordinary
-                  spaces into extraordinary living experiences.
+                  At Rubix, we believe that your living spaces are more than
+                  just four walls; they're a canvas for your dreams. We are a
+                  bespoke interior design company dedicated to transforming
+                  ordinary spaces into extraordinary living experiences.
                 </p>
               </Transition2>
             </motion.div>

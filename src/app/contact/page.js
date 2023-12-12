@@ -2,6 +2,7 @@
 import "./contactt.css";
 import React, { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
+import { motion } from 'framer-motion'
 import emailjs from "@emailjs/browser";
 import Swal from 'sweetalert2';
 import Transition from "../Transition/page";
@@ -41,94 +42,104 @@ const Contact = () => {
     setInputValue2(e.target.value);
   };
 
-// This is to console.log th form content
-//   const [details, setDetails] = useState({
-//     name: "",
-//     number: "",
-//     email: "",
-//     address: "",
-//     project: "",
-//     project_other: "",
-//     project2: "",
-//     project2_other: "",
-//     preference: "",
-//     start: "",
-//     budget: "",
-//   });
+//This is to console.log the form content
+  const [details, setDetails] = useState({
+    name: "",
+    number: "",
+    email: "",
+    address: "",
+    project: "",
+    project_other: "",
+    project2: "",
+    project2_other: "",
+    preference: "",
+    start: "",
+    budget: "",
+  });
 
-//   const HandleChange = (e) => {
-//     const name = e.target.name;
-//     const value = e.target.value;
-//     setDetails((prev) => {
-//       return { ...prev, [name]: value };
-//     });
-//   };
+  const HandleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setDetails((prev) => {
+      return { ...prev, [name]: value };
+    });
+  };
 
-//   const FormHandler = (e) => {
-//     e.preventDefault();
-//     emailjs
-//       .sendForm(
-//         "service_lv8c6x6",
-//         "template_uf85ab8",
-//         form.current,
-//         "_I1DfZ2tqQXdJosZ7"
-//       )
-//       .then(
-//         (result) => {
-//           console.log(result.text);
-//         },
-//         (error) => {
-//           console.log(error.text);
-//         }
-//     );
+  const FormHandler = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_lv8c6x6",
+        "template_uf85ab8",
+        form.current,
+        "_I1DfZ2tqQXdJosZ7"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+    );
 
-//     emailjs
-//       .sendForm(
-//         "service_lv8c6x6",
-//         "template_bcf56ko",
-//         form.current,
-//         "_I1DfZ2tqQXdJosZ7"
-//       )
-//       .then(
-//         (result) => {  
-//             Swal.fire({
-//                 title: "Service booked!",
-//                 text: "You'd be redirected to the home page",
-//                 icon: "success",
-//                 confirmButtonText: "Okay",
-//                 background: "#A52A2A",
-//                 color: "white",
-//                 timer: 1250,
-//             });
-//             setTimeout(() => {
-//                 routes.push("/");
-//             }, 1000);
+    emailjs
+      .sendForm(
+        "service_lv8c6x6",
+        "template_bcf56ko",
+        form.current,
+        "_I1DfZ2tqQXdJosZ7"
+      )
+      .then(
+        (result) => {  
+            Swal.fire({
+                title: "Service booked!",
+                text: "You'd be redirected to the home page",
+                icon: "success",
+                confirmButtonText: "Okay",
+                background: "#A52A2A",
+                color: "white",
+                timer: 1250,
+            });
+            setTimeout(() => {
+                routes.push("/");
+            }, 1000);
 
-//           console.log(result.text);
-//         },
-//         (error) => {
-//             Swal.fire({
-//                 title: "There was an Error!",
-//                 text: "Kindly try again",
-//                 icon: "error",
-//                 confirmButtonText: "Okay",
-//                 background: "#A52A2A",
-//                 color: "white",
-//                 timer: 3250,
-//             });
+          console.log(result.text);
+        },
+        (error) => {
+            Swal.fire({
+                title: "There was an Error!",
+                text: "Kindly try again",
+                icon: "error",
+                confirmButtonText: "Okay",
+                background: "#A52A2A",
+                color: "white",
+                timer: 3250,
+            });
 
-//           console.log(error.text);
-//         }
-//     );
-//     // console.log(details);
-//   };
+          console.log(error.text);
+        }
+    );
+    // console.log(details);
+  };
 
   return (
     <div>
       <Transition>
 
         
-        <form ref={form} >
+        <motion.form ref={form}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          yoyo: Infinity,
+        }}
+        animate={{
+          
+          filter: ["brightness(90%)", "brightness(97.5%)", "brightness(90%)"]
+        }}
+        >
           <p className="form_header">
             Have or need a creative project?  <br />Let's have a productive talk.
           </p>
@@ -220,7 +231,7 @@ const Contact = () => {
                 required
               />
               <label className="radio_title" for="opt3">
-                Other
+                Others
               </label>
               <input
                 type="text"
@@ -228,7 +239,7 @@ const Contact = () => {
                 name="project_other"
                 className="form_ans"
                 onChange={clear}
-                placeholder="Choose 'Other' to access"
+                placeholder="Choose 'Others' to access"
                 value={inputValue}
                 disabled={inputTag}
                 required
@@ -308,7 +319,7 @@ const Contact = () => {
                 required
               />
               <label className="radio_title" for="opt6">
-                Other
+                Others
               </label>
               <input
                 type="text"
@@ -316,7 +327,7 @@ const Contact = () => {
                 name="project2_other"
         
                 value={inputValue2}
-                placeholder="Choose 'Other' to access"
+                placeholder="Choose 'Others' to access"
                 onChange={clear2}
                 className="form_ans"
                 id="opt8"
@@ -386,7 +397,7 @@ const Contact = () => {
           <button type="submit" className="contact_btn">
             Schedule a Consultation
           </button>
-        </form>
+        </motion.form>
       </Transition>
     </div>
   );

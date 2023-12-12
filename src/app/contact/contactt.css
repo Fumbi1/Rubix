@@ -4,7 +4,7 @@ form{
     margin-inline: auto;
     padding: 2rem;
     background: #FAF9F6;
-    filter: brightness(90%);
+    /* filter: brightness(90%); */
     border: 2px rgba(225, 225, 225, 0.5) solid;
     backdrop-filter: blur(10px);
     border-radius: 1rem;

@@ -1,6 +1,7 @@
-
+'use client'
 import Pointer from "../contactpointer/page";
 import "./services.css"
+import { motion } from "framer-motion";
 import Transition from "../Transition/page";
 import Transition2 from "../Trsansition2/page";
 
@@ -10,12 +11,21 @@ const Services = () => {
   return <div>
     <main>
       <div className="service_main">
-        <img src="/service.png" width="100%" height="10%" alt="" />
+        <img src="/service.png" alt="" />
       </div>
 
       <div className="service_container">
         <div className="service_list">
-          <div className="service_content2">
+          <motion.div className="service_content2"
+            transition={{
+              duration: 5,
+              repeat: Infinity,
+              yoyo: Infinity,
+            }}
+            animate={{
+              background: ["#FFF","#F4F0EC","#FAF9F6", "#F4F0EC", "#FFF"],
+            }}
+          >
             <Transition>
               <p className="service_title"> Consultation (Interiors & Art)</p>
             </Transition>
@@ -24,9 +34,18 @@ const Services = () => {
               will collaborate with you to conceptualize innovative and personalized interior designs that suit your preferences and needs.
               </p>
             </Transition2>
-          </div>
+          </motion.div>
 
-          <div className="service_content">
+          <motion.div className="service_content"
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            yoyo: Infinity,
+          }}
+          animate={{
+            background: ["#FAF9F6","#F4F0EC","#FFF", "#F4F0EC", "#FAF9F6"],
+          }}
+          >
             <Transition>
               <p className="service_title">Conception and Implementation</p>
             </Transition>
@@ -34,9 +53,18 @@ const Services = () => {
               <p className="service_desc">Our team brings your ideas to life by creating personalized
               designs, managing every aspect, and coordinating with contractors and suppliers for a stunning result.</p>
             </Transition2>
-          </div>
+          </motion.div>
 
-          <div className="service_content2">
+          <motion.div className="service_content2"
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            yoyo: Infinity,
+          }}
+          animate={{
+            background: ["#FFF","#F4F0EC","#FAF9F6", "#F4F0EC", "#FFF"],
+          }}
+          >
             <Transition>
               <p className="service_title">Renovation</p>
             </Transition>
@@ -47,9 +75,18 @@ const Services = () => {
               aesthetics, and skilled trades coordination, exceeding expectations and reflecting personal style.
               </p>
             </Transition2>
-          </div>
+          </motion.div>
 
-          <div className="service_content">
+          <motion.div className="service_content"
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            yoyo: Infinity,
+          }}
+          animate={{
+            background: ["#FAF9F6","#F4F0EC","#FFF", "#F4F0EC", "#FAF9F6"],
+          }}
+          >
             <Transition>
               <p className="service_title">Project Management</p>
             </Transition>
@@ -60,9 +97,18 @@ const Services = () => {
               timely, budget-conscious, and high-quality results, ensuring your satisfaction.
               </p>
             </Transition2>
-          </div>
+          </motion.div>
 
-          <div className="service_content2">
+          <motion.div className="service_content2"
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            yoyo: Infinity,
+          }}
+          animate={{
+            background: ["#FFF","#F4F0EC","#FAF9F6", "#F4F0EC", "#FFF"],
+          }}
+          >
             <Transition>
               <p className="service_title">Procurement / Personal interior Shopper</p>
             </Transition>
@@ -73,7 +119,7 @@ const Services = () => {
                 flooring, and accessories to enhance your space, prioritizing sustainability and ethical sourcing.
               </p>
             </Transition2>
-          </div>
+          </motion.div>
         </div>
       </div>
 

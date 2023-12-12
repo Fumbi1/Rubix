@@ -29,8 +29,7 @@
   padding-bottom: 5rem;
   border-bottom-left-radius: 3.5rem;
   border-bottom-right-radius: 3.5rem;
-  animation: image 30s linear infinite alternate;
-  transition: all 1s ease-in-out;
+  animation: image 40s linear infinite alternate;
   animation-delay: 7s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;

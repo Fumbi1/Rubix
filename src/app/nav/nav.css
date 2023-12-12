@@ -61,6 +61,7 @@ nav{
     padding: 0.875rem 0.75rem;
     border-radius: 0.675rem;
     transition: all 500ms;
+    cursor: pointer;
 }
 
 .consultation_active{
