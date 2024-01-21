@@ -144,15 +144,10 @@ const Services = () => {
             <div className="workflow_div">
               <Transition>
                 <p  className="workflow_title">
-                  Concept & Details
+                  Client Consultation, Space Inspection and Analysis
                 </p>
               </Transition>
-              <Transition2>
-                <p className="workflow_guide">
-                After the initial consultation, we create a detailed project proposal, outlining scope, services,
-                costs, and style preferences in collaboration with the customer.
-                </p>
-              </Transition2>
+              
             </div>
           </div>
           <div className="workflow_c">
@@ -162,14 +157,10 @@ const Services = () => {
             <div className="workflow_div">
               <Transition>
                 <p  className="workflow_title">
-                  Idea for Work
+                  Project Proposal and Design Concept
                 </p>
               </Transition>
-              <Transition2>
-                <p className="workflow_guide">
-                We collect customer feedback on design concepts and iterate until satisfaction.
-                </p>
-              </Transition2>
+              
             </div>
           </div>
           <div className="workflow_a">
@@ -179,15 +170,10 @@ const Services = () => {
             <div className="workflow_div">
               <Transition>
                 <p  className="workflow_title">
-                  Design
+                  Material Selection and Procurement
                 </p>
               </Transition>
-              <Transition2>
-                <p className="workflow_guide">
-                We guide material and element selection, manage project implementation for quality, timeline,
-                and budget adherence.
-                </p>
-              </Transition2>
+            
             </div>
           </div>
           <div className="workflow_c">
@@ -197,15 +183,10 @@ const Services = () => {
             <div className="workflow_div">
               <Transition>
                 <p  className="workflow_title">
-                  Completion
+                  Project Execution and Management
                 </p>
               </Transition>
-              <Transition2>
-                <p className="workflow_guide">
-                We conduct a final walkthrough for customer satisfaction, provide documentation and warranties,
-                and aim for future collaborations.
-                </p>
-              </Transition2>
+              
             </div>
           </div>
         </div>

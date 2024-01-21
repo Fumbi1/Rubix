@@ -7,7 +7,7 @@ form{
     /* filter: brightness(90%); */
     border: 2px rgba(225, 225, 225, 0.5) solid;
     backdrop-filter: blur(10px);
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
     
 }

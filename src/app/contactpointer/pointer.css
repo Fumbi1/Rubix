@@ -8,7 +8,7 @@
     width: 80%;
     margin-inline: auto;
     padding-block: 5rem;
-    border-radius: 4.375rem;
+    /* border-radius: 4.375rem; */
     background: #573324;
     display: flex;
     flex-direction: column;

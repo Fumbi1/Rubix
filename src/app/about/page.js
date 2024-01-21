@@ -35,9 +35,7 @@ const Story = () => {
               >
                 <div className="cover">
                   <p className="card_header">Our Vision:</p>
-                  <p className="card_desc">Our vision is to redefine luxury in interior design by harmonizing
-                    form and function to create spaces that are not only aesthetically pleasing
-                    but also functional and comfortable.
+                  <p className="card_desc">Our vision is simply to build diverse lifestyle and experience with the power of design.
                   </p>
                 </div>
 

@@ -20,76 +20,115 @@
 }
 
 .home_poster {
-  background-image: url('/new.jpg');
-  background-size: cover;
-  background-position: center;
+  /* background-image: url('/new.jpg'); */
   width: 100%;
+  overflow: hidden;
+  position: relative;
   height: fit-content;
   padding-top: 10rem;
   padding-bottom: 5rem;
   border-bottom-left-radius: 3.5rem;
   border-bottom-right-radius: 3.5rem;
-  animation: image 40s linear infinite alternate;
-  animation-delay: 7s;
+}
+
+.ackground-img{
+  
+}
+
+.ackground{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  opacity: 0;
+  border-bottom-left-radius: 3.5rem;
+  border-bottom-right-radius: 3.5rem;
+  animation: image 18s linear infinite;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.ackground:nth-child(1){
+  background-image: url(/new.jpg);
+  animation-delay: 0s;
+}
+
+.ackground:nth-child(2){
+  background-image: url(/z4.jpg);
+  animation-delay: 4s;
+}
+
+.ackground:nth-child(3){
+  background-image: url(/z5.jpg);
+  animation-delay: 8s;
+}
+
+.ackground:nth-child(4){
+  background-image: url(/z1.jpg);
+  animation-delay: 12s;
+}
+
+.ackground:nth-child(5){
+  background-image: url(/z6.jpg);
+  animation-delay: 16s;
+}
+
+.ackground:nth-child(6){
+  background-image: url(/z7.jpg);
+  animation-delay: 20s;
+}
+
+.ackground:nth-child(7){
+  background-image: url(/z2.jpg);
+  animation-delay: 24s;
+}
+
+.ackground:nth-child(8){
+  background-image: url(/z9.jpg);
+  animation-delay: 28s;
+}
+
+.ackground:nth-child(9){
+  background-image: url(/z8.jpg);
+  animation-delay: 32s;
+}
+
+.ackground:nth-child(10){
+  background-image: url(/tv.jpg);
+  animation-delay: 36s;
+}
+
+.ackground:nth-child(11){
+  background-image: url(/y1.jpg);
+  animation-delay: 40s;
 }
 
 
 @keyframes image {
   0% {
-    background-image: url(/new.jpg);
+    opacity: 0;
+    transform: scale(100%);
   }
 
-  10% {
+  11% {
     opacity: 1;
-    background-image: url(/z4.jpg);
   }
 
-  20% {
+  22% {
     opacity: 1;
-    background-image: url(/z5.jpg);
   }
 
-  30% {
-    opacity: 1;
-    background-image: url(/z1.jpg);
-  }
-
-  40% {
-    opacity: 1;
-    background-image: url(/z6.jpg) lightgray 50%;
-  }
-
-  50% {
-    opacity: 1;
-    background-image: url(/z7.jpg);
-  }
-
-  60% {
-    opacity: 1;
-    background-image: url(/z2.jpg);
-  }
-
-  70% {
-    opacity: 1;
-    background-image: url(/z9.jpg);
-  }
-
-  80% {
-    opacity: 1;
-    background-image: url(/z8.jpg);
-  }
-
-
-  90% {
-    opacity: 1;
-    background-image: url(/tv.jpg);
+  33%{
+    opacity: 0;
   }
 
   100% {
-    opacity: 1;
-    background-image: url(/y1.jpg);
+    opacity: 0;
+    transform: scale(110%);
   }
 }
 
@@ -123,6 +162,7 @@ button:active {
   flex-direction: row;
   align-items: center;
   gap: 0.62rem;
+  cursor: pointer;
 }
 
 .Link {
@@ -132,7 +172,7 @@ button:active {
 .click > p {
   color: #fff;
   text-align: center;
-  font-family: Jost;
+  font-family: "Josefin Sans", sans-serif;
   font-size: clamp(0.75rem, 0.0286rem + 1.3571vw, 1.25rem);
   font-style: normal;
   font-weight: 600;
@@ -201,7 +241,7 @@ button:active {
 
 .sec2_desc {
   color: #4d5053;
-  font-family: Jost;
+  font-family: "Josefin Sans", sans-serif;
   font-size: clamp(0.8rem, 0.6357rem + 0.8214vw, 1.375rem);
   font-style: normal;
   font-weight: 400;
@@ -222,6 +262,7 @@ button:active {
   border-radius: 1.125rem;
   box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
   transition: all 750ms;
+  cursor: pointer;
 }
 
 .click2 {

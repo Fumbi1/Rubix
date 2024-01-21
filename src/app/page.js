@@ -12,7 +12,7 @@ const Home = () => {
   const Route = useRouter();
 
   const path = () => {
-    Route.push("/waitlist");
+    Route.push("/contact");
   };
 
   return (
@@ -21,6 +21,19 @@ const Home = () => {
         <div>
           <div className="main">
             <div className="home_poster">
+              <div className="ackground-img">
+                <div className="ackground"></div>
+                <div className="ackground"></div>
+                <div className="ackground"></div>
+                <div className="ackground"></div>
+                <div className="ackground"></div>
+                <div className="ackground"></div>
+                <div className="ackground"></div>
+                <div className="ackground"></div>
+                <div className="ackground"></div>
+                <div className="ackground"></div>
+                <div className="ackground"></div>
+              </div>
               <div className="home_innerposter">
                 <p className="intro">
                   <Transition3 delay={0}>E</Transition3>
@@ -63,8 +76,7 @@ const Home = () => {
                 </p>
                 <Transition3 delay={3.5}>
                   <p className="desc">
-                    Want early access to premium offers and get notified when
-                    you launch?
+                    Making the journey stress-free, enjoyable and worth it.
                   </p>
                 </Transition3>
                 <Transition3 delay={4.2}>
@@ -72,7 +84,7 @@ const Home = () => {
                     onClick={path}
                     className="button1"
                     transition={{
-                      duration: 0.75,
+                      duration: 1,
                       ease: "easeOut",
                       repeat: Infinity,
                       yoyo: Infinity,
@@ -83,7 +95,7 @@ const Home = () => {
                   >
                     <div className="Link">
                       <div className="click">
-                        <p>Join our Waitlist</p>
+                        <p>Book Now</p>
                         <img src="/arrow.png" alt="oops" />
                       </div>
                     </div>
@@ -126,21 +138,6 @@ const Home = () => {
                       taste and grandeur.
                     </p>
                   </Transition2>
-                  <Transition2>
-                    <div
-                      onClick={() => {
-                        Route.push("/services");
-                      }}
-                      className="button2"
-                    >
-                      <div className="Link">
-                        <div className="click2">
-                          <p>Our Services</p>
-                          <img src="/arrow.png" />
-                        </div>
-                      </div>
-                    </div>
-                  </Transition2>
                 </div>
                 <div className="sec2_image">
                   <Transition>
@@ -162,21 +159,6 @@ const Home = () => {
                       we specialize in creating elegant, tailor-made designs
                       that reflect your unique style and aspirations.
                     </p>
-                  </Transition2>
-                  <Transition2>
-                    <div
-                      onClick={() => {
-                        Route.push("/services");
-                      }}
-                      className="button2"
-                    >
-                      <div className="Link">
-                        <div className="click2">
-                          <p>Our Services</p>
-                          <img src="/arrow.png" />
-                        </div>
-                      </div>
-                    </div>
                   </Transition2>
                 </div>
                 <div className="sec2_image">
