@@ -48,9 +48,9 @@ const Story = () => {
               whileTap={{ scale: 1.25 }}
               >
                 <div className="cover">
-                  <p className="card_header">Our Te<span className="mask">am:</span>
+                  <p className="card_header">Our Team:
 </p>
-                  <p className="card_desc">Meet our team of <span className="mask">highly skilled designers,</span> 
+                  <p className="card_desc">Meet our team of highly skilled designers, 
                   architects, and artisans who turn your dreams into reality. 
                   Each member is handpicked for their unwavering commitment to excellence.
                   </p>

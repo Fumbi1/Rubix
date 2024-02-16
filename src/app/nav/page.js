@@ -20,7 +20,7 @@ const Nav = () => {
       if (window.scrollY > scrollThreshold) {
         navControls.start({
           backgroundColor: "#FFFFFF",
-          boxShadow: "4px 4px 40px 4px rgba(0, 0, 0, 0.6)",
+          
         });
       } else {
         navControls.start({ backgroundColor: "transparent", boxShadow: "none"});

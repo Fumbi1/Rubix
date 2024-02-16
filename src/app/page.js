@@ -96,35 +96,33 @@ const Home = () => {
                     <div className="Link">
                       <div className="click">
                         <p>Book Now</p>
-                        <img src="/arrow.png" alt="oops" />
                       </div>
                     </div>
                   </motion.div>
                 </Transition3>
               </div>
             </div>
-
             <motion.div
               className="hero"
-              transition={{
-                duration: 20,
-                repeat: Infinity,
-                yoyo: Infinity,
-              }}
-              animate={{
-                background: ["#4d5053", "#573324", "#000000", "#4d5053"],
-              }}
             >
               <Transition2>
-                <p className="intro2">
+                <motion.p 
+                className="intro2"
+                transition={{
+                  duration: 20,
+                  repeat: Infinity,
+                  yoyo: Infinity,
+                }}
+                animate={{
+                  color: ["#4d5053", "#573324", "#000000", "#4d5053"],
+                }}>
                   At Rubix, we believe that your living spaces are more than
                   just four walls; they're a canvas for your dreams. We are a
                   bespoke interior design company dedicated to transforming
                   ordinary spaces into extraordinary living experiences.
-                </p>
+                </motion.p>
               </Transition2>
             </motion.div>
-
             <div className="section2">
               <div className="subsection2">
                 <div className="sec2_txt">
@@ -146,7 +144,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-
             <div className="section2">
               <div className="subsection2a">
                 <div className="sec2_txt">
@@ -168,7 +165,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-
             <div className="section2">
               <div className="subsection2">
                 <div className="sec2_txt">
@@ -205,7 +201,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-
             <div className="section3">
               <div></div>
               <div></div>

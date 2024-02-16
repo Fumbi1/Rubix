@@ -22,7 +22,7 @@
 }
 
 .footer_left{
-    width: 22.5%;
+    width: 20%;
     
 }
 
@@ -98,12 +98,8 @@
 
 
 @media (max-width: 767px){
-    /* .footer{
-        width: 85%;
-        margin-inline: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    } */
+    .footer_left{
+        width: 33%;
+        
+    }
 }
