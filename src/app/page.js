@@ -21,7 +21,7 @@ const Home = () => {
         <div>
           <div className="main">
             <div className="home_poster">
-              <div className="ackground-img">
+              {/* <div className="ackground-img">
                 <div className="ackground"></div>
                 <div className="ackground"></div>
                 <div className="ackground"></div>
@@ -33,7 +33,7 @@ const Home = () => {
                 <div className="ackground"></div>
                 <div className="ackground"></div>
                 <div className="ackground"></div>
-              </div>
+              </div> */}
               <div className="home_innerposter">
                 <p className="intro">
                   <Transition3 delay={0}>E</Transition3>
@@ -188,7 +188,6 @@ const Home = () => {
                       <div className="Link">
                         <div className="click2">
                           <p>Our Services</p>
-                          <img src="/arrow.png" />
                         </div>
                       </div>
                     </div>
